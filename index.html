@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Advanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Snake — Advanced</h1>
+
+    <div class="topbar">
+      <div id="scoreboard">
+        <div>Score: <span id="score">0</span></div>
+        <div>High: <span id="highscore">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="btn-start">Start</button>
+        <button id="btn-pause">Pause</button>
+        <button id="btn-restart">Restart</button>
+        <label><input type="checkbox" id="toggle-wrap" checked> Wrap</label>
+        <label><input type="checkbox" id="toggle-obstacles"> Obstacles</label>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="480" height="480"></canvas>
+      <aside class="instructions">
+        <h3>Controls</h3>
+        <ul>
+          <li>Move: Arrow keys or WASD</li>
+          <li>Pause/Resume: Space or P</li>
+          <li>Restart: R or Restart button</li>
+        </ul>
+        <h3>Features</h3>
+        <ul>
+          <li>Speed increases every 5 points</li>
+          <li>Optional obstacles</li>
+          <li>High score saved to localStorage</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div id="message" class="hidden"></div>
+    <footer>
+      <small>Made in VS Code — copy & extend!</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

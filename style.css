@@ -1,0 +1,31 @@
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#16a34a;
+  --muted:#9aa6bf;
+  --card:#0b1220;
+}
+
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg,#071025, #081428);
+  color:#e6eef8;
+}
+main{width:960px; max-width:95%; padding:18px;}
+h1{text-align:center;margin:0 0 12px 0;font-weight:600}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px}
+#scoreboard{display:flex;gap:18px;align-items:center;font-weight:600}
+.controls{display:flex;gap:8px;align-items:center}
+.controls button{padding:6px 10px;border-radius:8px;border:none;background:#123; color:#fff;cursor:pointer}
+.controls label{font-weight:500; font-size:0.9rem}
+.game-area{display:flex;gap:12px;align-items:flex-start}
+canvas{background:#071022;border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,0.6)}
+.instructions{width:260px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;color:var(--muted)}
+#message{position:fixed;left:50%;transform:translateX(-50%);top:80px;padding:10px 16px;border-radius:8px; background:rgba(0,0,0,0.6); font-weight:600}
+.hidden{display:none}
+footer{text-align:center;margin-top:12px;color:var(--muted)}
